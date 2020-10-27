@@ -1,11 +1,6 @@
 package com.company;
 
 public class AtBashCipher implements Cipher{
-    @Override
-    public String decode(String message) {
-        return null;
-    }
-
 
     private final char[] plainText = {
             'a','A','b','B','c','C','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','l','L',
@@ -28,6 +23,21 @@ public class AtBashCipher implements Cipher{
                 }
             }
             objectString.append(plainText[index]);                  //Dołączanie do ciagu
+        }
+        return objectString.toString();
+    }
+
+    public String decode(String message){
+        StringBuilder objectString = new StringBuilder();                //Nowy obiekt String Builder
+        int index = 0;
+        for(int i = 0; i < message.length();i++){
+            char returnCharacter = message.charAt(i);                    //Zwracanie znaku przy określonym indeksie
+            for (int j = 0; j < plainText.length;j++){
+                if(plainText[j] == returnCharacter){
+                    index = j;
+                }
+            }
+            objectString.append(cryptogram[index]);                  //Dołączanie do ciagu
         }
         return objectString.toString();
     }
