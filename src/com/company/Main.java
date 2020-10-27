@@ -3,8 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println("ok");
-        System.out.println("okk");
+        Cipher atBashCipher = new AtBashCipher();
+
+        // Encode: Zoz nz plgz
+        System.out.println("Encode: " + atBashCipher.encode("Ala ma kota"));
+
+        // Decode: Ala ma kota
+        System.out.println("Decode: " + atBashCipher.decode("Zoz nz plgz"));
+
     }
 }
