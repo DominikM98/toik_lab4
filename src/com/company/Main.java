@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Cipher atBashCipher = new AtBashCiper();
+        Cipher atBashCipher = new AtBashCipher();
 
         // Encode: Zoz nz plgz
         System.out.println("Encode: " + atBashCipher.encode("Ala ma kota"));
