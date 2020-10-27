@@ -7,4 +7,3 @@ interface Cipher {
     /** deszyfrowanie wiadomosci*/
     String decode(final String message);
 }
-
