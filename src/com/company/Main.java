@@ -10,7 +10,6 @@ public class Main {
 
         // Decode: Ala ma kota
         System.out.println("Decode: " + atBashCipher.decode("Zoz nz plgz"));
-        System.out.println("d");
     }
 
 }
